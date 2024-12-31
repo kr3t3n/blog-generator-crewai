@@ -1,0 +1,54 @@
+monitor_financial_news:
+  description: >
+    Monitor and analyze the latest news and updates related to the technology
+    markets, with a particular focus on {subject}. Identify and summarize the most
+    relevant and impactful news items that could influence market, industry, technology trends or investor
+    decisions. Utilize news websites and real-time market data tools to gather
+    up-to-date information. Focus on detecting trends, regulatory changes, or significant
+    economic indicators that directly relate to {subject}.
+  expected_output: >
+    A detailed summary report highlighting the most impactful technology
+    news and updates related to {subject}. This report should include key insights
+    and their potential implications for the market and content strategy.
+
+analyze_market_data:
+  description: >
+    Analyze market data and trends related to {subject}, with a focus
+    on uncovering patterns, opportunities, and risks that could be leveraged in content
+    creation. Use advanced data analytics tools to process large datasets and generate
+    actionable insights. Pay special attention to how {subject} influences market
+    movements, investor sentiment, and economic indicators.
+  expected_output: >
+    A comprehensive analysis report that highlights key market trends
+    and actionable insights related to {subject}. The report should include data visualizations
+    and clear recommendations for content creation.
+
+create_content:
+  description: >
+    Based on the insights provided by the Market News Monitor and Data
+    Analyst agents, create high-quality, engaging content that educates and informs
+    the target audience about {subject}. Produce a well-structured markdown article
+    and social media updates that effectively communicate the insights gathered.
+    The article should include clear sections with headers, bullet points, and emphasis
+    where appropriate. Create at least two social media posts (Twitter and LinkedIn)
+    that highlight the key findings. The content must be factual, well-researched,
+    and reflect the latest market trends and insights.
+  expected_output: >
+    A markdown-formatted article with clear sections and at least two social media
+    posts that can be formatted into the ContentOutput Pydantic model structure.
+
+quality_assurance:
+  description: >
+    Review and refine the content created on {subject} to ensure it meets
+    the highest standards of accuracy, clarity, and brand alignment. Thoroughly proofread
+    and edit the content, checking for errors, inconsistencies, and alignment with
+    the brand voice. Ensure that the content accurately reflects the key insights
+    and recommendations provided by the Data Analyst and Market News Monitor agents.
+    The output MUST be a valid JSON object with an 'article' field containing a markdown-formatted
+    string and a 'social_media_posts' field containing a list of objects, each with
+    'platform' and 'content' fields. The output must match the ContentOutput Pydantic
+    model format exactly.
+  expected_output: >
+    A JSON object that exactly matches the ContentOutput Pydantic model format,
+    containing a markdown-formatted article string and a list of social media post
+    objects, each with platform and content fields. 

@@ -1,0 +1,12 @@
+crewai
+crewai-tools
+pydantic
+termcolor
+requests
+beautifulsoup4
+python-dotenv
+pyyaml
+langchain
+langchain-openai
+langchain-groq
+openai 

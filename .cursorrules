@@ -1,0 +1,59 @@
+# AI Content Generation System - Project Rules
+
+## Core Requirements
+- Use CrewAI implementation for all agent-based tasks
+- Use crewai-tools instead of custom tool implementations
+- Maintain models as specified (deepseek-chat)
+- Use system variables for API keys
+- No version numbers in requirements.txt
+
+## Code Standards
+- Use encoding="utf-8" with all file operations
+- Implement descriptive error handling with try-except blocks
+- Use termcolor for user feedback printing
+- Implement separation of concerns
+- Use proper environment variable validation
+
+## Project Structure
+1. Configuration
+   - YAML-based agent configurations
+   - YAML-based task configurations
+   - Environment variable management
+   - Pydantic models for output validation
+
+2. Agents
+   - Lead Market Analyst (Market News Monitor)
+   - Chief Data Strategist (Data Analysis)
+   - Creative Content Director (Content Creation)
+   - Chief Content Officer (Quality Assurance)
+
+3. Tasks
+   - Monitor financial news
+   - Analyze market data
+   - Create content
+   - Quality assurance
+
+4. Tools
+   - SerperDevTool for web search
+   - WebsiteSearchTool for targeted searches
+   - ScrapeWebsiteTool for content extraction
+
+5. Output
+   - Timestamped folders for each run
+   - Markdown-formatted articles
+   - Platform-specific social media posts
+   - Structured output using Pydantic models
+
+## Implementation Details
+- YAML for configuration management
+- Proper error handling and validation
+- Colored console output for user feedback
+- Structured output validation
+- Environment variable management
+- Separation of concerns in project structure
+
+## Notes
+- Keep all working functionality
+- Use proper error handling and informative printing
+- Maintain clean and organized code structure
+- Follow best practices for configuration management
